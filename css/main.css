@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400&display=swap');
+
+* {  
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+}
+
+body {
+  background: #000000;
+  font-family: 'Heebo', sans-serif;
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+}
+
+#canvas1 {
+  border: 5px solid #333;
+  background: #222222;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+}
+
+.controls {
+  position: absolute;
+  z-index: 10;
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.controls, select, option {
+  font-size: 20px;
+}
